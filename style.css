@@ -224,12 +224,12 @@ main {
 }
 
 #npd {
-  background-image: url(images/npd/npd.png);
+  background-image: url(https://quemio.github.io/portfolio/images/npd/npd.png);
   grid-column: 1 / 3;
 }
 
 #vid {
-  background-image: url(images/vid/vid-1.png);
+  background-image: url(/images/vid/vid-1.png);
   background-size: 1075px;
 }
 
@@ -238,22 +238,22 @@ main {
 }
 
 #project-visual {
-  background-image: url(images/project-visual/melkweg.png);
+  background-image: url(/images/project-visual/melkweg.png);
   background-size: 1000px;
   grid-column: 2 / 4;
 }
 
 #fed {
-  background-image: url(images/fed/code.jpg);
+  background-image: url(/images/fed/code.jpg);
 }
 
 #information-design {
-  background-image: url(images/information-design/map.png);
+  background-image: url(/images/information-design/map.png);
   grid-column: 1 / 3;
 }
 
 #minor {
-  background-image: url(images/minor/online-management.png);
+  background-image: url(/images/minor/online-management.png);
   grid-column: 1 / 4;
 }
 
