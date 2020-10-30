@@ -1,0 +1,458 @@
+/* CSS Document */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  height: 100%;
+  margin: auto;
+}
+
+body {
+  background: #151313;
+  height: fit-content;
+}
+img {
+  max-width: 100%;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #151313;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #151313;
+  font-family: "Poppins", sans-serif;
+
+  padding: 0px 20px;
+}
+
+.logo {
+      left: 20px;
+    }
+  
+.nav-links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #151313;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      transform: translatey(-120%);
+      transition: 0.2s ease-in;
+    }
+  
+.nav-links a {
+      color: #ffffff;
+    }
+  
+.nav-links li {
+      opacity: 0;
+      margin-left: 3.5em;
+    }
+  
+.burger {
+      display: block;
+    }
+  }
+  
+.nav-active {
+    transform: translate(0%);
+  }
+  
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+.toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+  }
+  
+  /* MAIN */
+  /* INTRO SECTION */
+  .intro {
+    overflow: hidden;
+    height: 100vh;
+    margin-bottom: 20px;
+    padding: 1em 1.3em;
+  }
+  
+  .heading {
+    width: auto;
+    margin-top: 90px;
+    margin-right: -5px;
+    padding-left: 0px;
+    font-size: 30px;
+    line-height: 40px;
+    color: white;
+  }
+  
+  .heading strong {
+    position: relative;
+    width: 752px;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 40px;
+    line-height: 56px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 0px;
+  }
+  
+  #streep {
+    padding-top: 30px;
+  }
+  
+  .paragraaf {
+    margin-top: 80px;
+    position: relative;
+    width: 430px;
+    margin-bottom: 15px;
+    padding-top: 75px;
+    font-family: "Roboto", sans-serif;
+    color: #868686;
+    font-size: 19px;
+    line-height: 26px;
+    width: 296px;
+    margin-bottom: 23px;
+    padding-right: 0px;
+    font-size: 16px;
+    color: #cfcfcf;
+  }
+  
+  .headerimg {
+    top: 91px;
+    right: 0;
+    bottom: 0px;
+    margin-top: 0px;
+    z-index: -2;
+    width: 85%;
+  }
+  .socialmedia {
+    margin: 30px 0px;
+  }
+  
+  .socialmedia ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+  
+  .socialmedia li {
+    padding: 0em 0.7em;
+  }
+  .socialmedia i {
+    color: #868686;
+    height: 40px;
+  }
+  
+  /* CASE STUDIES */
+  .casestudies {
+    position: relative;
+    top: 80px;
+    display: block;
+    margin: 23px;
+    background-color: #151313;
+  }
+  
+  .cases-titel {
+    color: white;
+    font-family: poppins;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .casecontainer {
+    height: 610px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    color: white;
+    margin: 2em 0em;
+    position: relative;
+  }
+  
+  #npd {
+    background-image: url(/images/npd/npd.png);
+  }
+  
+  #vid {
+    background-image: url(/images/vid/vid-1.png);
+    background-size: 1075px;
+  }
+  
+  #whello {
+    background-color: #1d7dd7;
+  }
+  
+  #project-visual {
+    background-image: url(/images/project-visual/melkweg.png);
+    background-size: 1000px;
+  }
+  
+  #fed {
+    background-image: url(/images/fed/code.jpg);
+  }
+  
+  #information-design {
+    background-image: url(/images/information-design/map.png);
+  }
+  
+  #minor {
+    background-image: url(/images/minor/online-management.png);
+  }
+  
+  .caseoverlay {
+    width: 100%;
+    height: 610px;
+    background: #000;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+  }
+  
+  .casetextblock {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    top: 10em;
+    width: 80%;
+    margin-left: 22px;
+  }
+  
+  .leerjaar {
+    opacity: 0.4;
+    font-family: Poppins, sans-serif;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .titel {
+    font-size: 1.5rem;
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-family: Poppins, sans-serif;
+    color: #ffffff;
+    line-height: 44px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .beschrijvingcase {
+    font-family: rotobo, sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .ctacase {
+    top: 20px;
+    margin-top: 84px;
+    padding: 14px 24px;
+    text-transform: uppercase;
+    color: #fff;
+    border: solid 2px #fff;
+    text-decoration-line: none;
+    font-family: Poppins, sans-serif;
+    width: 160px;
+    font-weight: bold;
+  }
+  
+  /* IPAD */
+  @media screen and (min-width: 769px) {
+    .logo {
+      left: 20px;
+    }
+  
+    .nav-links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #151313;
+      display: flex;
+      flex-direction: column;
+      align-items: space-around;
+      width: 100%;
+      transform: translatey(-120%);
+      transition: 0.2s ease-in;
+    }
+  
+    .nav-links a {
+      color: #ffffff;
+    }
+  
+    .nav-links li {
+      opacity: 0;
+      margin-left: 3.5em;
+    }
+  
+    .burger {
+      display: block;
+    }
+  }
+  
+  .nav-active {
+    transform: translate(0%);
+  }
+  }
+
+  /* DESKTOP */
+  @media screen and (min-width: 1025px)
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+  }
+  
+  .nav-links li {
+    list-style: none;
+    padding: 0em 1.5em;
+    margin: 0.5em 0em;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    transition: transform 250ms;
+    -webkit-transition: transform 250ms;
+  }
+  
+  .nav-links a:hover {
+    /* transform: scale(1.1); */
+    transition: 0.9s;
+  }
+  
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    webkit-transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: transform 250ms;
+    -webkit-transition: transform 250ms;
+  }
+  
+  .nav-links a:hover::after {
+    transform: translateX(-50%) scale(1);
+  }
+  
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .logo {
+    width: 3em;
+    left: 20px;
+  }
+  
+  main {
+    padding-bottom: 4em;
+  }
+  
+  .intro {
+    height: 100vh;
+    position: relative;
+  }
+  
+  .headerimg {
+    position: absolute;
+  }
+  
+  .casestudies {
+    position: absolute;
+  }
+  
+  #caseoverlay-whello {
+    opacity: 0.1;
+  }
+  /* 
+  .whello-logo {
+    width: 10%;
+    opacity: 0.5;
+    padding: ;
+  } */
+  
+  footer {
+    height: 200px;
+  }
+  
+  footer section:first-of-type {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+  .footer-links {
+    margin-top: 84px;
+    padding: 14px 24px;
+    text-transform: uppercase;
+    color: #fff;
+    border: solid 2px #fff;
+    text-decoration-line: none;
+    font-family: Poppins, sans-serif;
+    width: 160px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 1em 1.8em;
+  }
